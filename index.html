@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pong</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel='icon' href='favicon.ico' type='image/x-icon'/>
+</head>
+<body>
+	<div id="controlPanel">
+		<div onclick="startGame()" id="start" class="controls">Start Game</div>
+		<div onclick="stopGame()" id="stop" class="controls">Stop Game</div>
+		<div onclick="pauseGame()" id="pause" class="controls">Pause Game</div>
+		<div onclick="resumeGame()" id="resume" class="controls">Resume Game</div>
+	</div>
+	
+	<div id="header">
+		<h1 id="title">Pong</h1>
+		<h2 id="left">Score 1: <span id="score1">0</span></h2>
+		<h2 id="right">Score 2: <span id="score2">0</span></h2>
+	</div>
+	
+	<div id="gameBoard">
+		<div id="paddle1" class="paddle"></div>
+		<div id="ball"></div>
+		<div id="paddle2" class="paddle"></div>
+	</div>
+	
+	<div id="lightBox"></div>
+	
+	<div id="endScreen">
+		<div id="endBox">
+			<p id="endMessage"></p>
+			<p id="endMessage2"></p>
+			<button id="restartButton" onclick="startGame()">Play Again?</button>
+		</div>
+	</div>
+	
+	<script src="client.js"></script>
+</body>
+</html>

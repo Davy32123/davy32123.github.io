@@ -1,0 +1,147 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color:#222831;
+	color:#00adb5;
+}
+
+#header {
+	width:100%;
+	height:8vh;
+	position:relative;
+}
+
+#header h2 {
+	position:absolute;
+	bottom:0px;
+	margin-bottom:2px;
+}
+
+#title {
+	text-align:center;
+	font-size:45px;
+}
+
+#header #left {
+	left:500px;
+	bottom:25px;
+}
+
+#header #right {
+	right:500px;
+	bottom:25px
+}
+
+#gameBoard {
+	width:80%;
+	height:85vh;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#eeeeee;
+}
+
+.paddle {
+	height:220px;
+	width:10px;
+	background-color:#00adb5;
+}
+
+#paddle1 {
+	position:absolute;
+	top:300px;
+	left:0px;
+}
+
+#paddle2 {
+	position:absolute;
+	top:300px;
+	right:0px;
+}
+
+#ball {
+	position:absolute;
+	left:840px;
+	top:370px;
+	height:30px;
+	width:30px;
+	background-color:red;
+	border-radius:50%;
+}
+
+#lightBox {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.8);
+	
+	display:none;
+	z-index:1;
+}
+
+#endScreen {
+	position:absolute;
+	top:200px;
+	left:0px;
+	width:100%;
+	
+	
+	display:none;
+	z-index:1;
+}
+
+#endBox {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	width:35vw;
+	height:50vh;
+	background-color:#393e46;
+	text-align:center;
+	
+	border:12px solid #222831;
+}
+
+#endMessage {
+	margin-top:80px;
+	font-size:40px;
+	font-weight:600;
+}
+#endMessage2 {
+	font-size:30px;
+}
+
+#restartButton {
+	background-color:#eeeeee;
+	color:#222831;
+	width:200px;
+	height:80px;
+	
+	font-family: 'Exo 2', 'Roboto', sans-serif;
+	font-size:30px;
+}
+
+#restartButton:hover {
+	width:210px;
+	height:85px;
+}
+
+/* Control Panel */
+#controlPanel {
+	position:absolute;
+	top:30px;
+	right:10px;
+	z-index:1;
+}
+
+.controls {
+	display:inline-block;
+	padding:8px;
+	background-color:#393e46;
+	vertical-align:top;
+	text-align:center;
+	line-height:20px;
+	font-size:18px;
+	border-radius:5px;
+}
