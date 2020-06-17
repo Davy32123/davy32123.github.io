@@ -41,7 +41,7 @@ body {
 }
 
 .paddle {
-	height:220px;
+	height:260px;
 	width:10px;
 	background-color:#00adb5;
 }
