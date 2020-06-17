@@ -73,7 +73,7 @@ function startBall() {
 	} //else
 	
 	topSpeedOfBall = Math.random() * 2 + 3;
-	leftSpeedOfBall = direction * (Math.random() * 2 + 3);
+	leftSpeedOfBall = direction * (Math.random() * 2 + 4);
 }//startBall
 
 //update locations of paddles and ball
@@ -114,7 +114,7 @@ function show() {
 			leftSpeedOfBall *= -1;
 			bounce.play();
 			if (leftSpeedOfBall < 22) {
-				leftSpeedOfBall *= 1.2;
+				leftSpeedOfBall *= 1.1;
 			}//if
 		} else {
 			buzz.play();
@@ -135,7 +135,7 @@ function show() {
 			leftSpeedOfBall *= -1;
 			bounce.play();
 			if (leftSpeedOfBall < 22) {
-				leftSpeedOfBall *= 1.2;
+				leftSpeedOfBall *= 1.1;
 			}
 		} else {
 			buzz.play();
